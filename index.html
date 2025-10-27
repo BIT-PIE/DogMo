@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Title</title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> <!-- arXiv and google icon -->
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+  <script src="https://kit.fontawesome.com/edbfd41333.js" crossorigin="anonymous"></script> <!-- fontawesome icons -->
+  <script src="static/js/main.js"></script>
+
+  <!-- Optional for different requirements; if you don't need them, just remove -->
+  <!-- 1. before-after-comparison-slider: https://github.com/amirhosseinrahmati/before-after-comparison-slider/tree/master -->
+  <link rel="stylesheet" type="text/css" href="static/css/before_after.css">
+  <script src="static/js/before_after.js" type="text/javascript" ></script>
+
+  <!-- 2. three.js for loading mesh: https://threejs.org/ -->
+  <script src="static/js/static.js" type="module"></script> <!-- static scene -->
+  <script src="static/js/dynamic.js" type="module"></script> <!-- dynamic scene -->
+
+  <!-- 3. Carousel for visualizing a list of results: https://github.com/Wikiki/bulma-carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/carousel.css">
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js" type="module"></script>
+  <script src="static/js/carousel.js" type="module"></script>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-2">DogMo<img src="static/images/DogMo.png" alt="DogMo icon" 
+       style="width:24px; height:24px; margin-left:-5px; vertical-align:15px; filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.3));">: A Large-Scale Multi-View RGB-D Dataset for 4D Canine Motion Recovery</h2>
+      <!-- <p class="has-text-danger publisher">arXiv 2025</p> -->
+
+      <div class="is-size-5">
+        <span class="authors">
+          <a href="https://silvester.wang/" target="_blank">Zan Wang</a><sup>1*</sup>,</span>
+        <span class="authors">
+          Siyu Chen</a><sup>1*</sup>,</span>
+        <span class="authors">
+          Luya Mo</a><sup>1*</sup>,</span>
+        <span class="authors">
+          Xinfeng Gao</a><sup>1*</sup>,</span>
+        <span class="authors">
+          Yuxin Shen</a><sup>1</sup>,</span>
+        <span class="authors">
+          Lebin Ding</a><sup>1</sup>,</span>
+        <span class="authors">
+          <a href="https://liangwei-bit.github.io/web/" target="_blank">Wei Liang</a><sup>1,2✉️</sup></span>
+      </div>
+
+      <div class="is-size-6">
+        <span class="labels" style="display: block;">
+          <sup></sup>* indicates equal contribution
+        </span>
+        <span class="labels" style="display: block;">
+          <sup></sup>✉️ indicates corresponding author
+        </span>
+      </div>
+
+      <div class="is-size-6">
+        <span class="authors">
+          <sup>1</sup>School of Computer Science & Technology, Beijing Institute of Technology
+        <span class="authors">
+          <sup>2</sup>Yangtze Delta Region Academy of Beijing Institute of Technology, Jiaxing
+        </span>
+      </div>
+
+      <div class="links">
+        <span class="link">
+          <a href="#" target="_blank" class="external-link button is-normal is-rounded is-outlined is-danger">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+          </a>
+        </span>
+
+        <!-- <span class="link">
+          <a href="#" target="_blank" class="external-link button is-normal is-rounded is-outlined is-danger">
+            <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Paper</span>
+          </a>
+        </span>
+
+        <span class="link">
+          <a href="#" target="_blank" class="external-link button is-normal is-rounded is-outlined is-link">
+            <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Supplementary</span>
+          </a>
+        </span> -->
+
+        <span class="link">
+          <a href="https://pie-lab.cn/DogMo" target="_blank" class="external-link button is-normal is-rounded is-outlined is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </span>
+      </div>
+
+      <!-- <div class="columns is-centered">
+        <div class="column is-10">
+          <video autoplay controls muted loop height="100%">
+            <source src="static/videos/m1-mesh.mp4" type="video/mp4">
+          </video>
+          <h6 class="subtitle is-6">
+            <strong>TL;DR</strong> Lorem ipsum dolor sit amet. Vel molestiae deleniti qui cumque nisi ex libero perspiciatis est perspiciatis enim aut nemo placeat qui reprehenderit vitae cum blanditiis fuga.
+          </h6>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Abstract</h3>
+      <div class="has-text-justified">
+        <p>
+          We present <strong><em>DogMo</em></strong>, a large-scale multi-view RGB-D video dataset capturing diverse canine movements for the task of motion recovery from images. DogMo comprises <strong>1.2k motion sequences collected from 10 unique dogs</strong>, offering rich variation in both motion and breed. It addresses key limitations of existing dog motion datasets, including the lack of multi-view and real 3D data, as well as limited scale and diversity. Leveraging DogMo, we establish <strong>four motion recovery benchmark settings that support systematic evaluation across monocular and multi-view, RGB and RGB-D inputs</strong>. To facilitate accurate motion recovery, we further introduce a three-stage, instance-specific optimization pipeline that fits the SMAL model to the motion sequences. Our method progressively refines body shape and pose through coarse alignment, dense correspondence supervision, and temporal regularization. Our dataset and method provide a principled foundation for advancing research in dog motion recovery and open up new directions at the intersection of computer vision, computer graphics, and animal behavior modeling.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">3D Mesh Visualization with Three.js</h3>
+
+      <div id="canvas-static-container" class="block">
+        <canvas id="canvas-static" class="webgl" style="height: 100%; width: 100%;"></canvas>
+      </div>
+      
+      <div id="canvas-dynamic-container" class="block">
+        <canvas id="canvas-dynamic" class="webgl" style="height: 100%; width: 100%;"></canvas>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Before-After-Comparison-Slider</h3>
+      
+      <div class="bal-block">
+        <div id="before-after-container" class="bal-container">
+          <div class="bal-after">
+            <video muted autoplay="autoplay" loop="loop" height="100%">
+              <source src="static/videos/m1-mesh.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="bal-before">
+            <div class="bal-before-inset">
+              <video muted autoplay="autoplay" loop="loop" height="100%">
+                <source src="static/videos/m2-mesh.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="bal-handle">
+            <span class="handle-left-arrow"></span>
+            <span class="handle-right-arrow"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Dataset Gallery</h3>
+
+      <!-- <div class="carousel carousel-items">
+        <div class="item">
+          <video muted autoplay="autoplay" loop="loop" height="100%">
+            <source src="static/videos/m1-mesh.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item">
+          <video muted autoplay="autoplay" loop="loop" height="100%">
+            <source src="static/videos/m2-mesh.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div> -->
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-3 has-text-centered">Citation</h3>
+
+      <div class="bibtex">
+        <pre><code>@article{wang2025dogmo,
+  title={DogMo: A Large-Scale Multi-View RGB-D Dataset for 4D Canine Motion Recovery},
+  author=Wang, Zan and Chen, Siyu and Mo, Luya and Gao, Xinfeng and Shen, Yuxin and Ding, Lebin and Liang, Wei,
+  journal={arXiv preprint arXiv:2501.00000},
+  year={2025}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <span>
+      This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      <br>
+      The open-source code is available at <a href="https://github.com/silverster98/project-page-template">github</a>.
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
