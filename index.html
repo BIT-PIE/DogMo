@@ -82,24 +82,6 @@
           </a>
         </span>
 
-        <!-- <span class="link">
-          <a href="#" target="_blank" class="external-link button is-normal is-rounded is-outlined is-danger">
-            <span class="icon">
-              <i class="fas fa-file-pdf"></i>
-            </span>
-            <span>Paper</span>
-          </a>
-        </span>
-
-        <span class="link">
-          <a href="#" target="_blank" class="external-link button is-normal is-rounded is-outlined is-link">
-            <span class="icon">
-              <i class="fas fa-file-pdf"></i>
-            </span>
-            <span>Supplementary</span>
-          </a>
-        </span> -->
-
         <span class="link">
           <a href="https://pie-lab.cn/DogMo" target="_blank" class="external-link button is-normal is-rounded is-outlined is-dark">
             <span class="icon">
@@ -110,17 +92,6 @@
         </span>
       </div>
 
-      <!-- <div class="columns is-centered">
-        <div class="column is-10">
-          <video autoplay controls muted loop height="100%">
-            <source src="static/videos/m1-mesh.mp4" type="video/mp4">
-          </video>
-          <h6 class="subtitle is-6">
-            <strong>TL;DR</strong> Lorem ipsum dolor sit amet. Vel molestiae deleniti qui cumque nisi ex libero perspiciatis est perspiciatis enim aut nemo placeat qui reprehenderit vitae cum blanditiis fuga.
-          </h6>
-        </div>
-      </div> -->
-    <!-- </div> -->
   </section>
 
   <section class="section custom-section">
@@ -134,67 +105,481 @@
     </div>
   </section>
 
-  <!-- <section class="section custom-section">
-    <div class="container is-max-desktop has-text-centered">
-      <h3 class="title is-3">3D Mesh Visualization with Three.js</h3>
-
-      <div id="canvas-static-container" class="block">
-        <canvas id="canvas-static" class="webgl" style="height: 100%; width: 100%;"></canvas>
-      </div>
-      
-      <div id="canvas-dynamic-container" class="block">
-        <canvas id="canvas-dynamic" class="webgl" style="height: 100%; width: 100%;"></canvas>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="section custom-section">
-    <div class="container is-max-desktop has-text-centered">
-      <h3 class="title is-3">Before-After-Comparison-Slider</h3>
-      
-      <div class="bal-block">
-        <div id="before-after-container" class="bal-container">
-          <div class="bal-after">
-            <video muted autoplay="autoplay" loop="loop" height="100%">
-              <source src="static/videos/m1-mesh.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div class="bal-before">
-            <div class="bal-before-inset">
-              <video muted autoplay="autoplay" loop="loop" height="100%">
-                <source src="static/videos/m2-mesh.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-
-          <div class="bal-handle">
-            <span class="handle-left-arrow"></span>
-            <span class="handle-right-arrow"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <section class="section custom-section">
     <div class="container is-max-desktop has-text-centered">
       <h3 class="title is-3">Dataset Gallery</h3>
+      <div class="carousel carousel-items">
+          <div class="item" data-action="Sit">
+            <figure class="fourup-figure">
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal1/micheal1_sitting2_origin.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(a) RGB</span>
+                </div>
+              </figure>
 
-      <!-- <div class="carousel carousel-items">
-        <div class="item">
-          <video muted autoplay="autoplay" loop="loop" height="100%">
-            <source src="static/videos/m1-mesh.mp4" type="video/mp4">
-          </video>
-        </div>
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal1/micheal1_sitting2_depth.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(b) Depth</span>
+                </div>
+              </figure>
 
-        <div class="item">
-          <video muted autoplay="autoplay" loop="loop" height="100%">
-            <source src="static/videos/m2-mesh.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div> -->
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal1/micheal1_sitting2_mask.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(c) Mask</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal1/micheal1_sitting2_barc.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(d) Keypoint</span>
+                </div>
+              </figure>
+            </figure>
+            <div class="action-label">Action Label: Sit</div>
+          </div>
+
+          <div class="item" data-action="StandUp">
+            <figure class="fourup-figure">
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal2/liya_standup2_origin.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(a) RGB</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal2/liya_standup2_depth.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(b) Depth</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal2/liya_standup2_mask.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(c) Mask</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal2/liya_standup2_barc.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(d) Keypoint</span>
+                </div>
+              </figure>
+            </figure>
+            <div class="action-label">Action Label: Stand Up</div>
+          </div>
+
+          <div class="item" data-action="GetOnChair">
+            <figure class="fourup-figure">
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal3/lamei_getonchair2_origin.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(a) RGB</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal3/lamei_getonchair2_depth.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(b) Depth</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal3/lamei_getonchair2_mask.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(c) Mask</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal3/lamei_getonchair2_barc.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(d) Keypoint</span>
+                </div>
+              </figure>
+            </figure>
+            <div class="action-label">Action Label: Get On Chair</div>
+          </div>
+
+          <div class="item" data-action="PlayWithToy">
+            <figure class="fourup-figure">
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal4/duoduo_trot2_origin.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(a) RGB</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal4/duoduo_trot2_depth.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(b) Depth</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal4/duoduo_trot2_mask.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(c) Mask</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal4/duoduo_trot2_barc.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(d) Keypoint</span>
+                </div>
+              </figure>
+            </figure>
+            <div class="action-label">Action Label: Play With Toy</div>
+          </div>
+
+          <div class="item" data-action="PlayWithHuman">
+            <figure class="fourup-figure">
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal5/dafu_human2_origin.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(a) RGB</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal5/dafu_human2_depth.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(b) Depth</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal5/dafu_human2_mask.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(c) Mask</span>
+                </div>
+              </figure>
+
+              <figure class="subfig">
+                <div class="vid-wrap">
+                  <video autoplay muted loop playsinline>
+                    <source src="static/videos/dataset/animal5/dafu_human2_barc.mp4" type="video/mp4">
+                  </video>
+                  <span class="badge">(d) Keypoint</span>
+                </div>
+              </figure>
+            </figure>
+            <div class="action-label">Action Label: Play With Human</div>
+          </div>
+      </div>
+    </div>
   </section>
+
+  <style>
+  .fourup-figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .subfig { margin: 0; }
+  .subfig figcaption {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-top: .5rem;
+  }
+  .vid-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(0,0,0,.12);
+  }
+  .vid-wrap video {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .vid-wrap .badge {
+    position: absolute;
+    bottom: 8px; left: 38%;
+    width: 100px; height: 26px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff; font-weight: 600;
+    display: grid; place-items: center;
+    font-size: .9rem;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .action-label {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+    /* border: 2px solid #333; */
+    background: rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    display: inline-block;
+    padding: 2px 14px;
+  }
+
+  .carousel { position: relative; }
+  .carousel-items {
+    display: flex;
+    overflow: hidden;
+    will-change: transform;
+    transform: translateX();
+    transition: transform .35s ease;
+  }
+  .carousel .item {
+    flex: 0 0 100%;
+    padding: .5rem 0;
+    box-sizing: border-box;
+  }
+  </style>
+
+  <script>
+  (() => {
+    const track = document.getElementById('carousel');
+    const items = Array.from(track.querySelectorAll('.item'));
+    let idx = 0;
+    function applyPlayState() {
+      items.forEach((it, i) => {
+        const vids = it.querySelectorAll('video');
+        vids.forEach(v => {
+          if (i === idx) {
+            if (v.readyState < 2) v.load();
+            v.play().catch(()=>{});
+          } else {
+            v.pause();
+          }
+        });
+        const lbl = it.querySelector('.action-label');
+        if (lbl) {
+          const act = it.dataset.action || lbl.textContent.replace(/^Action Label:\s*/,'');
+          lbl.textContent = 'Action Label: ' + act;
+        }
+      });
+    }
+
+    function update() {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      applyPlayState();
+    }
+
+    function show(i) {
+      idx = (i + items.length) % items.length;
+      update();
+    }
+
+    requestAnimationFrame(update);
+
+    new ResizeObserver(() => {
+      update();
+    }).observe(track);
+
+    document.addEventListener('visibilitychange', () => {
+      const vids = items[idx].querySelectorAll('video');
+      if (document.hidden) vids.forEach(v => v.pause());
+      else vids.forEach(v => v.play().catch(()=>{}));
+    });
+  })();
+  </script>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Framework</h3>
+
+      <div class="image-container">
+        <img 
+          src="static/images/framework.jpg" 
+          alt="Framework Diagram"
+          style="width: 100%; max-width: 93%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Results on Single-view RGB</h3>
+
+      <div class="video-pair">
+        <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Singleview_RGB1.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="vid-label">Sample 1</div> -->
+        </div>
+
+        <!-- <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Singleview_RGB2.mp4" type="video/mp4">
+          </video>
+          <div class="vid-label">Sample 2</div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Results on Single-view RGB-D</h3>
+
+      <div class="video-pair">
+        <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Singleview_RGBD1.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="vid-label">Sample 1</div> -->
+        </div>
+
+        <!-- <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Singleview_RGBD2.mp4" type="video/mp4">
+          </video>
+          <div class="vid-label">Sample 2</div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Results on Multi-view RGB</h3>
+      <div class="video-pair">
+        <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Multiview_RGB1.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="vid-label">Sample 1</div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Results on Multi-view RGB-D</h3>
+
+      <div class="video-pair">
+        <!-- <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Multiview_RGBD1.mp4" type="video/mp4">
+          </video>
+          <div class="vid-label">Sample 1</div>
+        </div> -->
+
+        <div class="vid-block">
+          <video muted autoplay loop playsinline>
+            <source src="static/videos/results/Multiview_RGBD2.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="vid-label">Sample 2</div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .video-pair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 1rem;
+  }
+
+  .vid-block {
+    position: relative;
+    width: 93%;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,.15);
+  }
+
+  .vid-block video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .vid-label {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    height: 30px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 999px;
+    user-select: none;
+    pointer-events: none;
+  }    
+  </style>
+
 
   <section class="section custom-section">
     <div class="container is-max-desktop">
